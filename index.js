@@ -13,3 +13,10 @@ con.connect(function(err){
 
 	})
 })
+
+var login = "Test"
+var password = "123321"
+
+con.query("UPDATE first SET password = 'qwertt' WHERE login = 'Test'", function (err,result,fields){
+	console.log('completed')
+})
